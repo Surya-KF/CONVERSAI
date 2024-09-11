@@ -3,16 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot Client</title>
+    <title>ChatGPT-like Interface</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="chatbot-wrapper">
-        <h1>Chatbot Client</h1>
-        <div id="chat-container" class="chat-container"></div>
-        <div class="input-wrapper">
-            <input type="text" id="user-input" placeholder="Type your message...">
-            <button id="send-button">Send</button>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-robot"></i> AI Chat
+            </div>
+            <div class="theme-toggle">
+                <input type="checkbox" id="theme-toggle-checkbox">
+                <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </label>
+            </div>
+        </header>
+        <div class="chat-container">
+            <div class="sidebar">
+                <button id="new-chat"><i class="fas fa-plus"></i> New Chat</button>
+                <div id="conversation-list"></div>
+            </div>
+            <div class="main-content">
+                <div id="chat-messages"></div>
+                <div class="input-area">
+                    <textarea id="user-input" placeholder="Type your message here..."></textarea>
+                    <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
         </div>
     </div>
     <script src="config.js"></script>
