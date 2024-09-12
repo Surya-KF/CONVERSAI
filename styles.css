@@ -51,8 +51,8 @@ header {
 }
 
 .theme-toggle-label {
-    width: 60px;
-    height: 30px;
+    width: 3rem;
+    height: 1.25rem;
     background-color: var(--primary-color);
     display: flex;
     border-radius: 50px;
@@ -69,7 +69,7 @@ header {
 }
 
 .theme-toggle-label .fa-moon {
-    color: #f1c40f;
+    color: whitesmoke;
 }
 
 .theme-toggle-label::after {
